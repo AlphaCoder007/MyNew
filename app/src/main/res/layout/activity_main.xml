@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.darkphantom.batteryallert.MainActivity">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Battery Status"
+        android:fontFamily="@font/hel_reg"
+        android:layout_marginTop="15dp"
+        android:textSize="17sp"
+        android:letterSpacing="0.2"
+        android:textColor="#BBBBBB"/>
+
+    <ImageView
+        android:id="@+id/battery20"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/battery60"/>
+
+
+    <TextView
+        android:id="@+id/batter_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="155dp"
+        android:text="68"
+        android:fontFamily="@font/hel_bold"
+        android:layout_marginTop="165dp"
+        android:textSize="27sp"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="%"
+        android:fontFamily="@font/hel_bold"
+        android:layout_toRightOf="@id/batter_level"
+        android:layout_marginTop="165dp"
+        android:textSize="27sp"
+        android:textColor="#fff"/>
+
+
+    <ImageView
+        android:id="@+id/mood"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/battery20"
+        android:layout_marginTop="-5dp"
+        android:layout_marginLeft="110dp"
+        android:background="@drawable/mood2" />
+
+    <TextView
+        android:id="@+id/mood_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mood"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/battery20"
+        android:text="Low"
+        android:fontFamily="@font/hel_bold"
+        android:textSize="17sp"
+        android:textColor="#fff"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/battery20"
+        android:layout_marginRight="20dp" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/mood_text"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/batteryNotification"
+        />
+  <Button
+      android:layout_width="150dp"
+      android:layout_height="50dp"
+      android:text="Notifiy"
+      android:layout_below="@+id/batteryNotification"
+      android:id="@+id/notify_battery"
+      />
+
+    <RadioButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/testRadio"
+        android:layout_below="@+id/notify_battery"/>
+
+</RelativeLayout>
